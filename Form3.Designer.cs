@@ -60,6 +60,7 @@
             btn_calculo_de_compra_menu.TabIndex = 3;
             btn_calculo_de_compra_menu.Text = "QUANDO COMPRAR?";
             btn_calculo_de_compra_menu.UseVisualStyleBackColor = false;
+            btn_calculo_de_compra_menu.Click += btn_calculo_de_compra_menu_Click;
             // 
             // btn_calculo_de_horario_menu
             // 
@@ -72,6 +73,7 @@
             btn_calculo_de_horario_menu.TabIndex = 4;
             btn_calculo_de_horario_menu.Text = "QUANDO TOMAR?";
             btn_calculo_de_horario_menu.UseVisualStyleBackColor = false;
+            btn_calculo_de_horario_menu.Click += btn_calculo_de_horario_menu_Click;
             // 
             // btn_check_list_menu
             // 
@@ -84,6 +86,7 @@
             btn_check_list_menu.TabIndex = 5;
             btn_check_list_menu.Text = "CHECK-LIST";
             btn_check_list_menu.UseVisualStyleBackColor = false;
+            btn_check_list_menu.Click += btn_check_list_menu_Click;
             // 
             // lbl_logo_menu
             // 

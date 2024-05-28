@@ -16,4 +16,7 @@ C:\Users\pichau\Documents\faculdade\software_basico\projeto_medtime\projeto_medt
 C:\Users\pichau\Documents\faculdade\software_basico\projeto_medtime\projeto_medtime\obj\Debug\net8.0-windows\projeto_medtime.pdb
 C:\Users\pichau\Documents\faculdade\software_basico\projeto_medtime\projeto_medtime\obj\Debug\net8.0-windows\projeto_medtime.genruntimeconfig.cache
 C:\Users\pichau\Documents\faculdade\software_basico\projeto_medtime\projeto_medtime\obj\Debug\net8.0-windows\ref\projeto_medtime.dll
-C:\Users\pichau\Documents\faculdade\software_basico\projeto_medtime\projeto_medtime\obj\Debug\net8.0-windows\projeto_medtime.Form4.resources
+C:\Users\pichau\Documents\faculdade\software_basico\projeto_medtime\projeto_medtime\obj\Debug\net8.0-windows\projeto_medtime.pagina_quatro_quando_comprar.resources
+C:\Users\pichau\Documents\faculdade\software_basico\projeto_medtime\projeto_medtime\obj\Debug\net8.0-windows\projeto_medtime.pagina_cinco_quando_tomar.resources
+C:\Users\pichau\Documents\faculdade\software_basico\projeto_medtime\projeto_medtime\obj\Debug\net8.0-windows\projeto_medtime.pagina_seis_check_list.resources
+C:\Users\pichau\Documents\faculdade\software_basico\projeto_medtime\projeto_medtime\obj\Debug\net8.0-windows\projeto_medtime.sourcelink.json

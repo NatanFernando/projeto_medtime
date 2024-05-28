@@ -1,6 +1,6 @@
 ﻿namespace projeto_medtime
 {
-    partial class pagina_quatro_quando_comprar
+    partial class pagina_cinco_quando_tomar
     {
         /// <summary>
         /// Required designer variable.
@@ -42,7 +42,7 @@
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(884, 24);
-            menuStrip1.TabIndex = 0;
+            menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
             // 
             // qUANDOCOMPRARToolStripMenuItem
@@ -56,32 +56,28 @@
             qUANDOTOMARToolStripMenuItem.Name = "qUANDOTOMARToolStripMenuItem";
             qUANDOTOMARToolStripMenuItem.Size = new Size(118, 20);
             qUANDOTOMARToolStripMenuItem.Text = "QUANDO TOMAR?";
-            qUANDOTOMARToolStripMenuItem.Click += qUANDOTOMARToolStripMenuItem_Click;
             // 
             // cHECKLISTToolStripMenuItem
             // 
             cHECKLISTToolStripMenuItem.Name = "cHECKLISTToolStripMenuItem";
             cHECKLISTToolStripMenuItem.Size = new Size(83, 20);
             cHECKLISTToolStripMenuItem.Text = "CHECK-LIST";
-            cHECKLISTToolStripMenuItem.Click += cHECKLISTToolStripMenuItem_Click;
             // 
             // vOLTARToolStripMenuItem
             // 
             vOLTARToolStripMenuItem.Name = "vOLTARToolStripMenuItem";
             vOLTARToolStripMenuItem.Size = new Size(60, 20);
             vOLTARToolStripMenuItem.Text = "VOLTAR";
-            vOLTARToolStripMenuItem.Click += vOLTARToolStripMenuItem_Click;
             // 
-            // pagina_quatro_quando_comprar
+            // pagina_cinco_quando_tomar
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightSteelBlue;
             ClientSize = new Size(884, 561);
             Controls.Add(menuStrip1);
-            MainMenuStrip = menuStrip1;
-            Name = "pagina_quatro_quando_comprar";
-            Text = "QUANDO COMPRAR?";
+            Name = "pagina_cinco_quando_tomar";
+            Text = "QUANDO TOMAR?";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
