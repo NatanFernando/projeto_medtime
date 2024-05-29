@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(pagina_tres_menu));
             lbl_apresentacao_menu = new Label();
             btn_calculo_de_compra_menu = new Button();
             btn_calculo_de_horario_menu = new Button();
             btn_check_list_menu = new Button();
-            lbl_logo_menu = new Label();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // lbl_apresentacao_menu
@@ -40,7 +42,7 @@
             lbl_apresentacao_menu.AutoSize = true;
             lbl_apresentacao_menu.Font = new Font("Franklin Gothic Heavy", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lbl_apresentacao_menu.ForeColor = SystemColors.Window;
-            lbl_apresentacao_menu.Location = new Point(136, 154);
+            lbl_apresentacao_menu.Location = new Point(136, 153);
             lbl_apresentacao_menu.Name = "lbl_apresentacao_menu";
             lbl_apresentacao_menu.RightToLeft = RightToLeft.No;
             lbl_apresentacao_menu.Size = new Size(612, 30);
@@ -51,10 +53,11 @@
             // 
             // btn_calculo_de_compra_menu
             // 
+            btn_calculo_de_compra_menu.AutoSize = true;
             btn_calculo_de_compra_menu.BackColor = Color.CornflowerBlue;
             btn_calculo_de_compra_menu.Font = new Font("Franklin Gothic Heavy", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btn_calculo_de_compra_menu.ForeColor = SystemColors.Window;
-            btn_calculo_de_compra_menu.Location = new Point(292, 226);
+            btn_calculo_de_compra_menu.Location = new Point(292, 236);
             btn_calculo_de_compra_menu.Name = "btn_calculo_de_compra_menu";
             btn_calculo_de_compra_menu.Size = new Size(301, 50);
             btn_calculo_de_compra_menu.TabIndex = 3;
@@ -64,10 +67,11 @@
             // 
             // btn_calculo_de_horario_menu
             // 
+            btn_calculo_de_horario_menu.AutoSize = true;
             btn_calculo_de_horario_menu.BackColor = Color.CornflowerBlue;
             btn_calculo_de_horario_menu.Font = new Font("Franklin Gothic Heavy", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btn_calculo_de_horario_menu.ForeColor = SystemColors.Window;
-            btn_calculo_de_horario_menu.Location = new Point(292, 292);
+            btn_calculo_de_horario_menu.Location = new Point(292, 302);
             btn_calculo_de_horario_menu.Name = "btn_calculo_de_horario_menu";
             btn_calculo_de_horario_menu.Size = new Size(301, 50);
             btn_calculo_de_horario_menu.TabIndex = 4;
@@ -77,10 +81,11 @@
             // 
             // btn_check_list_menu
             // 
+            btn_check_list_menu.AutoSize = true;
             btn_check_list_menu.BackColor = Color.CornflowerBlue;
             btn_check_list_menu.Font = new Font("Franklin Gothic Heavy", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btn_check_list_menu.ForeColor = SystemColors.Window;
-            btn_check_list_menu.Location = new Point(292, 357);
+            btn_check_list_menu.Location = new Point(292, 367);
             btn_check_list_menu.Name = "btn_check_list_menu";
             btn_check_list_menu.Size = new Size(301, 50);
             btn_check_list_menu.TabIndex = 5;
@@ -88,31 +93,33 @@
             btn_check_list_menu.UseVisualStyleBackColor = false;
             btn_check_list_menu.Click += btn_check_list_menu_Click;
             // 
-            // lbl_logo_menu
+            // pictureBox1
             // 
-            lbl_logo_menu.AutoSize = true;
-            lbl_logo_menu.Font = new Font("Franklin Gothic Heavy", 32.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbl_logo_menu.ForeColor = SystemColors.Window;
-            lbl_logo_menu.Location = new Point(380, 71);
-            lbl_logo_menu.Name = "lbl_logo_menu";
-            lbl_logo_menu.Size = new Size(141, 50);
-            lbl_logo_menu.TabIndex = 10;
-            lbl_logo_menu.Text = "MENU";
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(311, 74);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(282, 54);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 11;
+            pictureBox1.TabStop = false;
             // 
             // pagina_tres_menu
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleMode = AutoScaleMode.None;
+            AutoSize = true;
             BackColor = Color.LightSteelBlue;
             ClientSize = new Size(884, 561);
-            Controls.Add(lbl_logo_menu);
+            Controls.Add(pictureBox1);
             Controls.Add(btn_check_list_menu);
             Controls.Add(btn_calculo_de_horario_menu);
             Controls.Add(btn_calculo_de_compra_menu);
             Controls.Add(lbl_apresentacao_menu);
             Name = "pagina_tres_menu";
+            RightToLeft = RightToLeft.No;
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "MENU";
             Load += pagina_tres_menu_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -123,6 +130,6 @@
         private Button btn_calculo_de_compra_menu;
         private Button btn_calculo_de_horario_menu;
         private Button btn_check_list_menu;
-        private Label lbl_logo_menu;
+        private PictureBox pictureBox1;
     }
 }

@@ -20,6 +20,7 @@ namespace projeto_medtime
         {
             InitializeComponent();
 
+            lbl_resultado.Visible = false;
         }
 
         private void qUANDOTOMARToolStripMenuItem_Click(object sender, EventArgs e)
@@ -64,7 +65,7 @@ namespace projeto_medtime
 
         private void label2_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void txtB_nome_do_remedio_TextChanged(object sender, EventArgs e)
@@ -85,6 +86,7 @@ namespace projeto_medtime
             int quanidade_vez = int.Parse(txtB_quantidade_cada_vez.Text);
             int dias = total / (vezes * quanidade_vez);
 
+            lbl_resultado.Show();
             lbl_resultado.Text = ("O " + nome + " durará " + dias + " dias.");
         }
 

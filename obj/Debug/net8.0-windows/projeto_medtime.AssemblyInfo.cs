@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("projeto_medtime")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8bb0a0121e536d547356e699a1293d2721ae0c2f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f151cf127a112c7ca684bb0d699fbbc1b7816246")]
 [assembly: System.Reflection.AssemblyProductAttribute("projeto_medtime")]
 [assembly: System.Reflection.AssemblyTitleAttribute("projeto_medtime")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

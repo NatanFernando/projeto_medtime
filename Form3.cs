@@ -22,7 +22,7 @@ namespace projeto_medtime
 
         private void lbl_apresentacao_menu_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btn_calculo_de_compra_menu_Click(object sender, EventArgs e)

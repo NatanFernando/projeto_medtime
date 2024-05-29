@@ -26,6 +26,21 @@ namespace projeto_medtime
 
         private void txtB_nome_cadastro_TextChanged(object sender, EventArgs e)
         {
+            txtB_nome_cadastro.MaxLength = 10;
+        }
+
+        private void txtB_senha_cadastro_TextChanged(object sender, EventArgs e)
+        {
+            txtB_senha_cadastro.PasswordChar = '*';
+        }
+
+        private void txtB_confirmar_senha_cadastro_TextChanged(object sender, EventArgs e)
+        {
+            txtB_confirmar_senha_cadastro.PasswordChar = '*';
+        }
+
+        private void lbl_senha_cadastro_Click(object sender, EventArgs e)
+        {
 
         }
     }
