@@ -19,6 +19,7 @@ namespace projeto_medtime
 
         private void btn_cadastrarme_cadastro_Click(object sender, EventArgs e)
         {
+            // ESTE BOTÃO CONCLUI O CADASTRO E DIRECIONA PARA A PÁGINA DO MENU
             pagina_tres_menu pagina_Tres_Menu = new pagina_tres_menu(txtB_nome_cadastro.Text);
             pagina_Tres_Menu.Show();
         }

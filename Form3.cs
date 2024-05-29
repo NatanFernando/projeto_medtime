@@ -26,18 +26,21 @@ namespace projeto_medtime
 
         private void btn_calculo_de_compra_menu_Click(object sender, EventArgs e)
         {
+            // ESTE BOTÃO DIRECIONA PARA A PÁGINA "QUANDO COMPRAR?"
             pagina_quatro_quando_comprar pagina_Quatro_Quando_Comprar = new pagina_quatro_quando_comprar();
             pagina_Quatro_Quando_Comprar.Show();
         }
 
         private void btn_calculo_de_horario_menu_Click(object sender, EventArgs e)
         {
+            // ESTE BOTÃO DIRECIONA PARA A PÁGINA "QUANDO TOMAR?"
             pagina_cinco_quando_tomar pagina_Cinco_Quando_Tomar = new pagina_cinco_quando_tomar();
             pagina_Cinco_Quando_Tomar.Show();
         }
 
         private void btn_check_list_menu_Click(object sender, EventArgs e)
         {
+            // ESTE BOTÃO DIRECIONA PARA A PÁGINA "CHECK-LIST"
             pagina_seis_check_list pagina_Seis_Check_List = new pagina_seis_check_list();
             pagina_Seis_Check_List.Show();
         }

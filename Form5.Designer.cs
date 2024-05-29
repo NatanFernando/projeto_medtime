@@ -38,35 +38,43 @@
             // 
             // menuStrip1
             // 
+            menuStrip1.BackColor = Color.LightSteelBlue;
+            menuStrip1.Font = new Font("Franklin Gothic Heavy", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             menuStrip1.Items.AddRange(new ToolStripItem[] { qUANDOCOMPRARToolStripMenuItem, qUANDOTOMARToolStripMenuItem, cHECKLISTToolStripMenuItem, vOLTARToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(884, 24);
+            menuStrip1.RenderMode = ToolStripRenderMode.System;
+            menuStrip1.Size = new Size(884, 32);
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
             // 
             // qUANDOCOMPRARToolStripMenuItem
             // 
+            qUANDOCOMPRARToolStripMenuItem.ForeColor = SystemColors.Window;
             qUANDOCOMPRARToolStripMenuItem.Name = "qUANDOCOMPRARToolStripMenuItem";
-            qUANDOCOMPRARToolStripMenuItem.Size = new Size(135, 20);
+            qUANDOCOMPRARToolStripMenuItem.Size = new Size(204, 28);
             qUANDOCOMPRARToolStripMenuItem.Text = "QUANDO COMPRAR?";
             // 
             // qUANDOTOMARToolStripMenuItem
             // 
+            qUANDOTOMARToolStripMenuItem.ForeColor = SystemColors.Window;
             qUANDOTOMARToolStripMenuItem.Name = "qUANDOTOMARToolStripMenuItem";
-            qUANDOTOMARToolStripMenuItem.Size = new Size(118, 20);
+            qUANDOTOMARToolStripMenuItem.Size = new Size(176, 28);
             qUANDOTOMARToolStripMenuItem.Text = "QUANDO TOMAR?";
             // 
             // cHECKLISTToolStripMenuItem
             // 
+            cHECKLISTToolStripMenuItem.ForeColor = SystemColors.Window;
             cHECKLISTToolStripMenuItem.Name = "cHECKLISTToolStripMenuItem";
-            cHECKLISTToolStripMenuItem.Size = new Size(83, 20);
+            cHECKLISTToolStripMenuItem.Size = new Size(124, 28);
             cHECKLISTToolStripMenuItem.Text = "CHECK-LIST";
             // 
             // vOLTARToolStripMenuItem
             // 
+            vOLTARToolStripMenuItem.Alignment = ToolStripItemAlignment.Right;
+            vOLTARToolStripMenuItem.ForeColor = SystemColors.Window;
             vOLTARToolStripMenuItem.Name = "vOLTARToolStripMenuItem";
-            vOLTARToolStripMenuItem.Size = new Size(60, 20);
+            vOLTARToolStripMenuItem.Size = new Size(91, 28);
             vOLTARToolStripMenuItem.Text = "VOLTAR";
             // 
             // pagina_cinco_quando_tomar

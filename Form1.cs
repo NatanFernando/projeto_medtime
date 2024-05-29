@@ -14,12 +14,14 @@ namespace projeto_medtime
 
         private void btn_pular_Click(object sender, EventArgs e)
         {
+            // ESTE BOTÃO DIRECIONA PARA A PÁGINA DO MENU, SEM LOGIN
             pagina_tres_menu pagina_Tres_Menu = new pagina_tres_menu(txtB_nome_login.Text);
             pagina_Tres_Menu.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            // ESTE BOTÃO DIRECIONA PARA A PÁGINA DO MENU, COM LOGIN
             pagina_tres_menu pagina_Tres_Menu = new pagina_tres_menu(txtB_nome_login.Text);
             pagina_Tres_Menu.Show();
         }
@@ -31,6 +33,7 @@ namespace projeto_medtime
 
         private void linkLabel_cadastro_login_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            // ESTE LINKLABEL DIRECIONA PARA A PÁGINA DE CADASTRO
             pagina_dois_cadastro pagina_Dois_Cadastro = new pagina_dois_cadastro();
             pagina_Dois_Cadastro.Show();
         }

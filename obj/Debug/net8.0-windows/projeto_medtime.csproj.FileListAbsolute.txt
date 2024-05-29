@@ -20,3 +20,4 @@ C:\Users\pichau\Documents\faculdade\software_basico\projeto_medtime\projeto_medt
 C:\Users\pichau\Documents\faculdade\software_basico\projeto_medtime\projeto_medtime\obj\Debug\net8.0-windows\projeto_medtime.pagina_cinco_quando_tomar.resources
 C:\Users\pichau\Documents\faculdade\software_basico\projeto_medtime\projeto_medtime\obj\Debug\net8.0-windows\projeto_medtime.pagina_seis_check_list.resources
 C:\Users\pichau\Documents\faculdade\software_basico\projeto_medtime\projeto_medtime\obj\Debug\net8.0-windows\projeto_medtime.sourcelink.json
+C:\Users\pichau\Documents\faculdade\software_basico\projeto_medtime\projeto_medtime\obj\Debug\net8.0-windows\projeto_medtime.Properties.Resources.resources
