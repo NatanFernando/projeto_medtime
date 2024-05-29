@@ -23,5 +23,10 @@ namespace projeto_medtime
             pagina_tres_menu pagina_Tres_Menu = new pagina_tres_menu(txtB_nome_cadastro.Text);
             pagina_Tres_Menu.Show();
         }
+
+        private void txtB_nome_cadastro_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -48,7 +48,7 @@
             btn_logar_login.BackgroundImageLayout = ImageLayout.None;
             btn_logar_login.Font = new Font("Franklin Gothic Heavy", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btn_logar_login.ForeColor = SystemColors.Window;
-            btn_logar_login.Location = new Point(330, 394);
+            btn_logar_login.Location = new Point(332, 425);
             btn_logar_login.Name = "btn_logar_login";
             btn_logar_login.Size = new Size(104, 45);
             btn_logar_login.TabIndex = 0;
@@ -61,7 +61,7 @@
             btn_pular.BackColor = Color.CornflowerBlue;
             btn_pular.Font = new Font("Franklin Gothic Heavy", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btn_pular.ForeColor = SystemColors.Window;
-            btn_pular.Location = new Point(454, 394);
+            btn_pular.Location = new Point(456, 425);
             btn_pular.Name = "btn_pular";
             btn_pular.Size = new Size(99, 45);
             btn_pular.TabIndex = 1;
@@ -74,7 +74,7 @@
             lbl_nome_login.AutoSize = true;
             lbl_nome_login.Font = new Font("Franklin Gothic Heavy", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lbl_nome_login.ForeColor = SystemColors.Window;
-            lbl_nome_login.Location = new Point(93, 163);
+            lbl_nome_login.Location = new Point(95, 194);
             lbl_nome_login.Name = "lbl_nome_login";
             lbl_nome_login.Size = new Size(92, 34);
             lbl_nome_login.TabIndex = 2;
@@ -84,7 +84,7 @@
             // 
             txtB_nome_login.Font = new Font("Franklin Gothic Heavy", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtB_nome_login.ForeColor = SystemColors.WindowFrame;
-            txtB_nome_login.Location = new Point(204, 160);
+            txtB_nome_login.Location = new Point(206, 191);
             txtB_nome_login.Name = "txtB_nome_login";
             txtB_nome_login.Size = new Size(602, 35);
             txtB_nome_login.TabIndex = 3;
@@ -95,7 +95,7 @@
             lbl_cpf_login.AutoSize = true;
             lbl_cpf_login.Font = new Font("Franklin Gothic Heavy", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lbl_cpf_login.ForeColor = SystemColors.Window;
-            lbl_cpf_login.Location = new Point(93, 223);
+            lbl_cpf_login.Location = new Point(95, 254);
             lbl_cpf_login.Name = "lbl_cpf_login";
             lbl_cpf_login.Size = new Size(64, 34);
             lbl_cpf_login.TabIndex = 4;
@@ -105,7 +105,7 @@
             // 
             txtB_cpf_login.Font = new Font("Franklin Gothic Heavy", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtB_cpf_login.ForeColor = SystemColors.WindowFrame;
-            txtB_cpf_login.Location = new Point(204, 219);
+            txtB_cpf_login.Location = new Point(206, 250);
             txtB_cpf_login.Name = "txtB_cpf_login";
             txtB_cpf_login.Size = new Size(602, 35);
             txtB_cpf_login.TabIndex = 5;
@@ -115,7 +115,7 @@
             lbl_senha_login.AutoSize = true;
             lbl_senha_login.Font = new Font("Franklin Gothic Heavy", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lbl_senha_login.ForeColor = SystemColors.Window;
-            lbl_senha_login.Location = new Point(93, 282);
+            lbl_senha_login.Location = new Point(95, 313);
             lbl_senha_login.Name = "lbl_senha_login";
             lbl_senha_login.Size = new Size(101, 34);
             lbl_senha_login.TabIndex = 6;
@@ -125,7 +125,7 @@
             // 
             txtB_senha_login.Font = new Font("Franklin Gothic Heavy", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtB_senha_login.ForeColor = SystemColors.WindowFrame;
-            txtB_senha_login.Location = new Point(204, 282);
+            txtB_senha_login.Location = new Point(206, 313);
             txtB_senha_login.Name = "txtB_senha_login";
             txtB_senha_login.Size = new Size(602, 35);
             txtB_senha_login.TabIndex = 7;
@@ -135,7 +135,7 @@
             lbl_logo_login.AutoSize = true;
             lbl_logo_login.Font = new Font("Franklin Gothic Heavy", 32.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lbl_logo_login.ForeColor = SystemColors.Window;
-            lbl_logo_login.Location = new Point(346, 81);
+            lbl_logo_login.Location = new Point(332, 99);
             lbl_logo_login.Name = "lbl_logo_login";
             lbl_logo_login.Size = new Size(207, 50);
             lbl_logo_login.TabIndex = 8;
@@ -146,7 +146,7 @@
             linkLabel_cadastro_login.ActiveLinkColor = Color.DeepSkyBlue;
             linkLabel_cadastro_login.AutoSize = true;
             linkLabel_cadastro_login.Font = new Font("Franklin Gothic Heavy", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            linkLabel_cadastro_login.Location = new Point(702, 328);
+            linkLabel_cadastro_login.Location = new Point(704, 359);
             linkLabel_cadastro_login.Name = "linkLabel_cadastro_login";
             linkLabel_cadastro_login.Size = new Size(104, 21);
             linkLabel_cadastro_login.TabIndex = 9;
@@ -159,7 +159,7 @@
             lbl_cadastrarse_login.AutoSize = true;
             lbl_cadastrarse_login.Font = new Font("Franklin Gothic Heavy", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lbl_cadastrarse_login.ForeColor = SystemColors.Window;
-            lbl_cadastrarse_login.Location = new Point(488, 328);
+            lbl_cadastrarse_login.Location = new Point(490, 359);
             lbl_cadastrarse_login.Name = "lbl_cadastrarse_login";
             lbl_cadastrarse_login.Size = new Size(208, 21);
             lbl_cadastrarse_login.TabIndex = 10;
@@ -170,7 +170,7 @@
             checkBox1.AutoSize = true;
             checkBox1.Font = new Font("Franklin Gothic Heavy", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             checkBox1.ForeColor = SystemColors.Window;
-            checkBox1.Location = new Point(204, 324);
+            checkBox1.Location = new Point(206, 355);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(128, 25);
             checkBox1.TabIndex = 11;

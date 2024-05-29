@@ -32,18 +32,19 @@
             qUANDOCOMPRARToolStripMenuItem = new ToolStripMenuItem();
             qUANDOTOMARToolStripMenuItem = new ToolStripMenuItem();
             cHECKLISTToolStripMenuItem = new ToolStripMenuItem();
-            vOLTARToolStripMenuItem = new ToolStripMenuItem();
-            txtB_nome_cadastro = new TextBox();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
+            txtB_nome_do_remedio = new TextBox();
+            txtB_quantidade_por_dia = new TextBox();
+            txtB_quantas_vezes_ao_dia = new TextBox();
+            txtB_quantidade_cada_vez = new TextBox();
             label1 = new Label();
-            lbl_nome_cadastro = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            checkBox1 = new CheckBox();
-            checkBox2 = new CheckBox();
+            lbl_nome_do_remedio = new Label();
+            lbl_quantidade_por_dia = new Label();
+            lbl_quantas_vezes_ao_dia = new Label();
+            lbl_quantidade_cada_vez = new Label();
+            checkBox_Unidade = new CheckBox();
+            checkBox2_Miligrama = new CheckBox();
+            lbl_resultado = new Label();
+            btn_calcular = new Button();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -51,7 +52,7 @@
             // 
             menuStrip1.BackColor = Color.LightSteelBlue;
             menuStrip1.Font = new Font("Franklin Gothic Heavy", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { qUANDOCOMPRARToolStripMenuItem, qUANDOTOMARToolStripMenuItem, cHECKLISTToolStripMenuItem, vOLTARToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { qUANDOCOMPRARToolStripMenuItem, qUANDOTOMARToolStripMenuItem, cHECKLISTToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.RenderMode = ToolStripRenderMode.System;
@@ -83,130 +84,149 @@
             cHECKLISTToolStripMenuItem.Text = "CHECK-LIST";
             cHECKLISTToolStripMenuItem.Click += cHECKLISTToolStripMenuItem_Click;
             // 
-            // vOLTARToolStripMenuItem
+            // txtB_nome_do_remedio
             // 
-            vOLTARToolStripMenuItem.Alignment = ToolStripItemAlignment.Right;
-            vOLTARToolStripMenuItem.BackColor = Color.CadetBlue;
-            vOLTARToolStripMenuItem.ForeColor = SystemColors.Window;
-            vOLTARToolStripMenuItem.Name = "vOLTARToolStripMenuItem";
-            vOLTARToolStripMenuItem.Size = new Size(91, 28);
-            vOLTARToolStripMenuItem.Text = "VOLTAR";
-            vOLTARToolStripMenuItem.TextAlign = ContentAlignment.MiddleRight;
-            vOLTARToolStripMenuItem.Click += vOLTARToolStripMenuItem_Click;
+            txtB_nome_do_remedio.Font = new Font("Franklin Gothic Heavy", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtB_nome_do_remedio.ForeColor = SystemColors.WindowFrame;
+            txtB_nome_do_remedio.Location = new Point(127, 101);
+            txtB_nome_do_remedio.Name = "txtB_nome_do_remedio";
+            txtB_nome_do_remedio.Size = new Size(656, 29);
+            txtB_nome_do_remedio.TabIndex = 2;
+            txtB_nome_do_remedio.TextChanged += txtB_nome_do_remedio_TextChanged;
             // 
-            // txtB_nome_cadastro
+            // txtB_quantidade_por_dia
             // 
-            txtB_nome_cadastro.Font = new Font("Franklin Gothic Heavy", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtB_nome_cadastro.ForeColor = SystemColors.WindowFrame;
-            txtB_nome_cadastro.Location = new Point(127, 140);
-            txtB_nome_cadastro.Name = "txtB_nome_cadastro";
-            txtB_nome_cadastro.Size = new Size(656, 29);
-            txtB_nome_cadastro.TabIndex = 2;
+            txtB_quantidade_por_dia.Font = new Font("Franklin Gothic Heavy", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtB_quantidade_por_dia.ForeColor = SystemColors.WindowFrame;
+            txtB_quantidade_por_dia.Location = new Point(127, 207);
+            txtB_quantidade_por_dia.Name = "txtB_quantidade_por_dia";
+            txtB_quantidade_por_dia.Size = new Size(656, 31);
+            txtB_quantidade_por_dia.TabIndex = 3;
             // 
-            // textBox1
+            // txtB_quantas_vezes_ao_dia
             // 
-            textBox1.Font = new Font("Franklin Gothic Heavy", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.ForeColor = SystemColors.WindowFrame;
-            textBox1.Location = new Point(127, 246);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(656, 31);
-            textBox1.TabIndex = 3;
+            txtB_quantas_vezes_ao_dia.Font = new Font("Franklin Gothic Heavy", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtB_quantas_vezes_ao_dia.ForeColor = SystemColors.WindowFrame;
+            txtB_quantas_vezes_ao_dia.Location = new Point(127, 281);
+            txtB_quantas_vezes_ao_dia.Name = "txtB_quantas_vezes_ao_dia";
+            txtB_quantas_vezes_ao_dia.Size = new Size(656, 29);
+            txtB_quantas_vezes_ao_dia.TabIndex = 4;
+            txtB_quantas_vezes_ao_dia.TextChanged += txtB_quantas_vezes_ao_dia_TextChanged;
             // 
-            // textBox2
+            // txtB_quantidade_cada_vez
             // 
-            textBox2.Font = new Font("Franklin Gothic Heavy", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.ForeColor = SystemColors.WindowFrame;
-            textBox2.Location = new Point(127, 320);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(656, 29);
-            textBox2.TabIndex = 4;
-            // 
-            // textBox3
-            // 
-            textBox3.Font = new Font("Franklin Gothic Heavy", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox3.ForeColor = SystemColors.WindowFrame;
-            textBox3.Location = new Point(127, 394);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(656, 29);
-            textBox3.TabIndex = 5;
-            textBox3.TextChanged += textBox3_TextChanged;
+            txtB_quantidade_cada_vez.Font = new Font("Franklin Gothic Heavy", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtB_quantidade_cada_vez.ForeColor = SystemColors.WindowFrame;
+            txtB_quantidade_cada_vez.Location = new Point(127, 355);
+            txtB_quantidade_cada_vez.Name = "txtB_quantidade_cada_vez";
+            txtB_quantidade_cada_vez.Size = new Size(656, 29);
+            txtB_quantidade_cada_vez.TabIndex = 5;
+            txtB_quantidade_cada_vez.TextChanged += textBox3_TextChanged;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(127, 115);
+            label1.Location = new Point(127, 76);
             label1.Name = "label1";
             label1.Size = new Size(0, 15);
             label1.TabIndex = 6;
             // 
-            // lbl_nome_cadastro
+            // lbl_nome_do_remedio
             // 
-            lbl_nome_cadastro.AutoSize = true;
-            lbl_nome_cadastro.Font = new Font("Franklin Gothic Heavy", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbl_nome_cadastro.ForeColor = SystemColors.Window;
-            lbl_nome_cadastro.Location = new Point(127, 111);
-            lbl_nome_cadastro.Name = "lbl_nome_cadastro";
-            lbl_nome_cadastro.Size = new Size(291, 26);
-            lbl_nome_cadastro.TabIndex = 7;
-            lbl_nome_cadastro.Text = "QUAL O NOME DO REMÉDIO?";
-            lbl_nome_cadastro.Click += lbl_nome_cadastro_Click;
+            lbl_nome_do_remedio.AutoSize = true;
+            lbl_nome_do_remedio.Font = new Font("Franklin Gothic Heavy", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbl_nome_do_remedio.ForeColor = SystemColors.Window;
+            lbl_nome_do_remedio.Location = new Point(127, 72);
+            lbl_nome_do_remedio.Name = "lbl_nome_do_remedio";
+            lbl_nome_do_remedio.Size = new Size(291, 26);
+            lbl_nome_do_remedio.TabIndex = 7;
+            lbl_nome_do_remedio.Text = "QUAL O NOME DO REMÉDIO?";
+            lbl_nome_do_remedio.Click += lbl_nome_cadastro_Click;
             // 
-            // label2
+            // lbl_quantidade_por_dia
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Franklin Gothic Heavy", 15.75F);
-            label2.ForeColor = SystemColors.Window;
-            label2.Location = new Point(127, 217);
-            label2.Name = "label2";
-            label2.Size = new Size(373, 26);
-            label2.TabIndex = 8;
-            label2.Text = "QUANTAS(OS) {CHECK BOX} POR DIA?";
+            lbl_quantidade_por_dia.AutoSize = true;
+            lbl_quantidade_por_dia.Font = new Font("Franklin Gothic Heavy", 15.75F);
+            lbl_quantidade_por_dia.ForeColor = SystemColors.Window;
+            lbl_quantidade_por_dia.Location = new Point(127, 178);
+            lbl_quantidade_por_dia.Name = "lbl_quantidade_por_dia";
+            lbl_quantidade_por_dia.Size = new Size(398, 26);
+            lbl_quantidade_por_dia.TabIndex = 8;
+            lbl_quantidade_por_dia.Text = "QUANTAS(OS) UNIDADES/ML's POSSUI?";
+            lbl_quantidade_por_dia.Click += lbl_quantidade_por_dia_Click;
             // 
-            // label3
+            // lbl_quantas_vezes_ao_dia
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Franklin Gothic Heavy", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.ForeColor = SystemColors.Window;
-            label3.Location = new Point(127, 291);
-            label3.Name = "label3";
-            label3.Size = new Size(373, 26);
-            label3.TabIndex = 9;
-            label3.Text = "QUANTAS VEZES É INGERIDO AO DIA?";
+            lbl_quantas_vezes_ao_dia.AutoSize = true;
+            lbl_quantas_vezes_ao_dia.Font = new Font("Franklin Gothic Heavy", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbl_quantas_vezes_ao_dia.ForeColor = SystemColors.Window;
+            lbl_quantas_vezes_ao_dia.Location = new Point(127, 252);
+            lbl_quantas_vezes_ao_dia.Name = "lbl_quantas_vezes_ao_dia";
+            lbl_quantas_vezes_ao_dia.Size = new Size(373, 26);
+            lbl_quantas_vezes_ao_dia.TabIndex = 9;
+            lbl_quantas_vezes_ao_dia.Text = "QUANTAS VEZES É INGERIDO AO DIA?";
             // 
-            // label4
+            // lbl_quantidade_cada_vez
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Franklin Gothic Heavy", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.ForeColor = SystemColors.Window;
-            label4.Location = new Point(127, 365);
-            label4.Name = "label4";
-            label4.Size = new Size(430, 26);
-            label4.TabIndex = 10;
-            label4.Text = "QUAL A QUANTIDADE É TOMADA CADA VEZ?";
+            lbl_quantidade_cada_vez.AutoSize = true;
+            lbl_quantidade_cada_vez.Font = new Font("Franklin Gothic Heavy", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbl_quantidade_cada_vez.ForeColor = SystemColors.Window;
+            lbl_quantidade_cada_vez.Location = new Point(127, 326);
+            lbl_quantidade_cada_vez.Name = "lbl_quantidade_cada_vez";
+            lbl_quantidade_cada_vez.Size = new Size(413, 26);
+            lbl_quantidade_cada_vez.TabIndex = 10;
+            lbl_quantidade_cada_vez.Text = "QUAL A QUANTIDADE TOMADA CADA VEZ?";
             // 
-            // checkBox1
+            // checkBox_Unidade
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Font = new Font("Franklin Gothic Heavy", 15.75F);
-            checkBox1.ForeColor = SystemColors.Window;
-            checkBox1.Location = new Point(304, 175);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(119, 30);
-            checkBox1.TabIndex = 11;
-            checkBox1.Text = "UNIDADE";
-            checkBox1.UseVisualStyleBackColor = true;
+            checkBox_Unidade.AutoSize = true;
+            checkBox_Unidade.Font = new Font("Franklin Gothic Heavy", 15.75F);
+            checkBox_Unidade.ForeColor = SystemColors.Window;
+            checkBox_Unidade.Location = new Point(304, 136);
+            checkBox_Unidade.Name = "checkBox_Unidade";
+            checkBox_Unidade.Size = new Size(119, 30);
+            checkBox_Unidade.TabIndex = 11;
+            checkBox_Unidade.Text = "UNIDADE";
+            checkBox_Unidade.UseVisualStyleBackColor = true;
+            checkBox_Unidade.CheckedChanged += checkBox_Unidade_CheckedChanged;
             // 
-            // checkBox2
+            // checkBox2_Miligrama
             // 
-            checkBox2.AutoSize = true;
-            checkBox2.Font = new Font("Franklin Gothic Heavy", 15.75F);
-            checkBox2.ForeColor = SystemColors.Window;
-            checkBox2.Location = new Point(475, 175);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(146, 30);
-            checkBox2.TabIndex = 12;
-            checkBox2.Text = "MILIGRAMA";
-            checkBox2.UseVisualStyleBackColor = true;
+            checkBox2_Miligrama.AutoSize = true;
+            checkBox2_Miligrama.Font = new Font("Franklin Gothic Heavy", 15.75F);
+            checkBox2_Miligrama.ForeColor = SystemColors.Window;
+            checkBox2_Miligrama.Location = new Point(475, 136);
+            checkBox2_Miligrama.Name = "checkBox2_Miligrama";
+            checkBox2_Miligrama.Size = new Size(146, 30);
+            checkBox2_Miligrama.TabIndex = 12;
+            checkBox2_Miligrama.Text = "MILIGRAMA";
+            checkBox2_Miligrama.UseVisualStyleBackColor = true;
+            checkBox2_Miligrama.CheckedChanged += checkBox2_Miligrama_CheckedChanged;
+            // 
+            // lbl_resultado
+            // 
+            lbl_resultado.AutoSize = true;
+            lbl_resultado.Font = new Font("Franklin Gothic Heavy", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbl_resultado.ForeColor = SystemColors.Window;
+            lbl_resultado.Location = new Point(417, 474);
+            lbl_resultado.Name = "lbl_resultado";
+            lbl_resultado.Size = new Size(72, 26);
+            lbl_resultado.TabIndex = 13;
+            lbl_resultado.Text = "label2";
+            lbl_resultado.Click += label2_Click;
+            // 
+            // btn_calcular
+            // 
+            btn_calcular.BackColor = Color.CornflowerBlue;
+            btn_calcular.Font = new Font("Franklin Gothic Heavy", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btn_calcular.ForeColor = SystemColors.Window;
+            btn_calcular.Location = new Point(390, 411);
+            btn_calcular.Name = "btn_calcular";
+            btn_calcular.Size = new Size(124, 35);
+            btn_calcular.TabIndex = 14;
+            btn_calcular.Text = "CALCULAR";
+            btn_calcular.UseVisualStyleBackColor = false;
+            btn_calcular.Click += btn_calcular_Click;
             // 
             // pagina_quatro_quando_comprar
             // 
@@ -214,17 +234,19 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightSteelBlue;
             ClientSize = new Size(884, 561);
-            Controls.Add(checkBox2);
-            Controls.Add(checkBox1);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(lbl_nome_cadastro);
+            Controls.Add(btn_calcular);
+            Controls.Add(lbl_resultado);
+            Controls.Add(checkBox2_Miligrama);
+            Controls.Add(checkBox_Unidade);
+            Controls.Add(lbl_quantidade_cada_vez);
+            Controls.Add(lbl_quantas_vezes_ao_dia);
+            Controls.Add(lbl_quantidade_por_dia);
+            Controls.Add(lbl_nome_do_remedio);
             Controls.Add(label1);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Controls.Add(txtB_nome_cadastro);
+            Controls.Add(txtB_quantidade_cada_vez);
+            Controls.Add(txtB_quantas_vezes_ao_dia);
+            Controls.Add(txtB_quantidade_por_dia);
+            Controls.Add(txtB_nome_do_remedio);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "pagina_quatro_quando_comprar";
@@ -242,17 +264,18 @@
         private ToolStripMenuItem qUANDOCOMPRARToolStripMenuItem;
         private ToolStripMenuItem qUANDOTOMARToolStripMenuItem;
         private ToolStripMenuItem cHECKLISTToolStripMenuItem;
-        private ToolStripMenuItem vOLTARToolStripMenuItem;
-        private TextBox txtB_nome_cadastro;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
+        private TextBox txtB_nome_do_remedio;
+        private TextBox txtB_quantidade_por_dia;
+        private TextBox txtB_quantas_vezes_ao_dia;
+        private TextBox txtB_quantidade_cada_vez;
         private Label label1;
-        private Label lbl_nome_cadastro;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private CheckBox checkBox1;
-        private CheckBox checkBox2;
+        private Label lbl_nome_do_remedio;
+        private Label lbl_quantidade_por_dia;
+        private Label lbl_quantas_vezes_ao_dia;
+        private Label lbl_quantidade_cada_vez;
+        private CheckBox checkBox_Unidade;
+        private CheckBox checkBox2_Miligrama;
+        private Label lbl_resultado;
+        private Button btn_calcular;
     }
 }

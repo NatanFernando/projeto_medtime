@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Common;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,6 +15,7 @@ namespace projeto_medtime
 {
     public partial class pagina_quatro_quando_comprar : Form
     {
+
         public pagina_quatro_quando_comprar()
         {
             InitializeComponent();
@@ -33,7 +36,7 @@ namespace projeto_medtime
             pagina_Seis_Check_List.Show();
         }
 
-        public void vOLTARToolStripMenuItem_Click(object sender, EventArgs e)
+        private void vOLTARToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // ESTE BOTÃO VOLTA PARA PÁGINA "MENU"
 
@@ -55,6 +58,53 @@ namespace projeto_medtime
         }
 
         private void lbl_nome_cadastro_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtB_nome_do_remedio_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtB_quantas_vezes_ao_dia_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_calcular_Click(object sender, EventArgs e)
+        {
+            string nome = txtB_nome_do_remedio.Text;
+            int total = int.Parse(txtB_quantidade_por_dia.Text);
+            int vezes = int.Parse(txtB_quantas_vezes_ao_dia.Text);
+            int quanidade_vez = int.Parse(txtB_quantidade_cada_vez.Text);
+            int dias = total / (vezes * quanidade_vez);
+
+            lbl_resultado.Text = ("O " + nome + " durará " + dias + " dias.");
+        }
+
+        private void checkBox_Unidade_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox_Unidade.Checked)
+            {
+                lbl_quantidade_por_dia.Text = ("QUANTAS UNIDADES POSSUI?");
+            }
+        }
+
+        private void checkBox2_Miligrama_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox2_Miligrama.Checked)          
+            {
+                lbl_quantidade_por_dia.Text = ("QUANTAS MILIGRAMAS POSSUI?");
+            }
+        }
+
+        private void lbl_quantidade_por_dia_Click(object sender, EventArgs e)
         {
 
         }

@@ -12,6 +12,7 @@ namespace projeto_medtime
 {
     public partial class pagina_tres_menu : Form
     {
+
         public pagina_tres_menu(String Menu)
         {
             InitializeComponent();
@@ -43,6 +44,11 @@ namespace projeto_medtime
             // ESTE BOTÃO DIRECIONA PARA A PÁGINA "CHECK-LIST"
             pagina_seis_check_list pagina_Seis_Check_List = new pagina_seis_check_list();
             pagina_Seis_Check_List.Show();
+        }
+
+        private void pagina_tres_menu_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

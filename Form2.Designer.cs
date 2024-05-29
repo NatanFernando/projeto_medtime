@@ -59,6 +59,7 @@
             txtB_nome_cadastro.Name = "txtB_nome_cadastro";
             txtB_nome_cadastro.Size = new Size(656, 35);
             txtB_nome_cadastro.TabIndex = 1;
+            txtB_nome_cadastro.TextChanged += txtB_nome_cadastro_TextChanged;
             // 
             // btn_cadastrarme_cadastro
             // 

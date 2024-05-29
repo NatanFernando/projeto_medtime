@@ -112,6 +112,7 @@
             Controls.Add(lbl_apresentacao_menu);
             Name = "pagina_tres_menu";
             Text = "MENU";
+            Load += pagina_tres_menu_Load;
             ResumeLayout(false);
             PerformLayout();
         }
