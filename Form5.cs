@@ -22,5 +22,11 @@ namespace projeto_medtime
             pagina_quatro_quando_comprar pagina_Quatro_Quando_Comprar = new pagina_quatro_quando_comprar();
             pagina_Quatro_Quando_Comprar.Show();
         }
+
+        private void cHECKLISTToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pagina_seis_check_list pagina_Seis_Check_List = new pagina_seis_check_list();
+            pagina_Seis_Check_List.Show();
+        }
     }
 }
