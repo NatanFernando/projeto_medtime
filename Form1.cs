@@ -63,6 +63,11 @@ namespace projeto_medtime
         {
 
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("CASO ESTEJA TENDO DIFICULDADES COM SEU LOGIN, ACESSE O PROGRAMA DIRETO ATRAVÉS DO BOTÃO \"PULAR\" ");
+        }
     }
 }
 

@@ -81,13 +81,23 @@ namespace projeto_medtime
         private void btn_calcular_Click(object sender, EventArgs e)
         {
             string nome = txtB_nome_do_remedio.Text;
-            int total = int.Parse(txtB_quantidade_por_dia.Text);
-            int vezes = int.Parse(txtB_quantas_vezes_ao_dia.Text);
-            int quanidade_vez = int.Parse(txtB_quantidade_cada_vez.Text);
+            int total = int.Parse(txtB_quantidade_por_dia.Text); //QUANTAS MLS OU UNIDADE POR DIA
+            int vezes = int.Parse(txtB_quantas_vezes_ao_dia.Text); //QUANTAS VEZES POR DIA
+            int quanidade_vez = int.Parse(txtB_quantidade_cada_vez.Text); //QUANTIDADE TOMADA POR VEZ
+
             int dias = total / (vezes * quanidade_vez);
 
-            lbl_resultado.Show();
-            lbl_resultado.Text = ("O " + nome + " durará " + dias + " dias.");
+            lbl_resultado.Visible = true;   
+
+            if ((60 % dias) == 0)
+            {
+                lbl_resultado.Text = ("O REMÉDIO ACABARÁ EM " + dias + " DIAS");
+            }
+            else
+            {
+                int dias_completos = (60 / dias);
+                lbl_resultado.Text = ("Total de dias" + dias_completos);
+            }
         }
 
         private void checkBox_Unidade_CheckedChanged(object sender, EventArgs e)

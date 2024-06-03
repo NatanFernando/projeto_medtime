@@ -16,5 +16,11 @@ namespace projeto_medtime
         {
             InitializeComponent();
         }
+
+        private void qUANDOCOMPRARToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pagina_quatro_quando_comprar pagina_Quatro_Quando_Comprar = new pagina_quatro_quando_comprar();
+            pagina_Quatro_Quando_Comprar.Show();
+        }
     }
 }

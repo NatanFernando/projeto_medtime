@@ -42,7 +42,9 @@
             msk_txtB_CPF = new MaskedTextBox();
             pictureBox1 = new PictureBox();
             lbl_logo_cadastro = new Label();
+            pictureBox_ajuda_login = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_ajuda_login).BeginInit();
             SuspendLayout();
             // 
             // btn_logar_login
@@ -169,7 +171,7 @@
             msk_txtB_CPF.Location = new Point(386, 236);
             msk_txtB_CPF.Mask = "000,000,000-00";
             msk_txtB_CPF.Name = "msk_txtB_CPF";
-            msk_txtB_CPF.Size = new Size(187, 35);
+            msk_txtB_CPF.Size = new Size(190, 35);
             msk_txtB_CPF.TabIndex = 12;
             // 
             // pictureBox1
@@ -194,6 +196,17 @@
             lbl_logo_cadastro.Text = "LOGIN";
             lbl_logo_cadastro.Click += lbl_logo_cadastro_Click;
             // 
+            // pictureBox_ajuda_login
+            // 
+            pictureBox_ajuda_login.Image = (Image)resources.GetObject("pictureBox_ajuda_login.Image");
+            pictureBox_ajuda_login.Location = new Point(848, 528);
+            pictureBox_ajuda_login.Name = "pictureBox_ajuda_login";
+            pictureBox_ajuda_login.Size = new Size(25, 25);
+            pictureBox_ajuda_login.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox_ajuda_login.TabIndex = 15;
+            pictureBox_ajuda_login.TabStop = false;
+            pictureBox_ajuda_login.Click += pictureBox2_Click;
+            // 
             // primeira_pagina_login
             // 
             AllowDrop = true;
@@ -201,6 +214,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightSteelBlue;
             ClientSize = new Size(884, 561);
+            Controls.Add(pictureBox_ajuda_login);
             Controls.Add(lbl_logo_cadastro);
             Controls.Add(pictureBox1);
             Controls.Add(msk_txtB_CPF);
@@ -220,6 +234,7 @@
             Text = "LOGIN";
             Load += primeira_pagina_login_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_ajuda_login).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -239,5 +254,6 @@
         private MaskedTextBox msk_txtB_CPF;
         private PictureBox pictureBox1;
         private Label lbl_logo_cadastro;
+        private PictureBox pictureBox_ajuda_login;
     }
 }

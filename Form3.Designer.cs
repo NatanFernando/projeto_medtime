@@ -42,7 +42,7 @@
             lbl_apresentacao_menu.AutoSize = true;
             lbl_apresentacao_menu.Font = new Font("Franklin Gothic Heavy", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lbl_apresentacao_menu.ForeColor = SystemColors.Window;
-            lbl_apresentacao_menu.Location = new Point(136, 153);
+            lbl_apresentacao_menu.Location = new Point(136, 162);
             lbl_apresentacao_menu.Name = "lbl_apresentacao_menu";
             lbl_apresentacao_menu.RightToLeft = RightToLeft.No;
             lbl_apresentacao_menu.Size = new Size(612, 30);
@@ -96,7 +96,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(311, 74);
+            pictureBox1.Location = new Point(302, 74);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(282, 54);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
