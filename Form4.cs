@@ -26,20 +26,23 @@ namespace projeto_medtime
         private void qUANDOTOMARToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // ESTE MENU ABRE A PÁGINA "QUANDO TOMAR?"
+            this.Hide();
             pagina_cinco_quando_tomar pagina_Cinco_Quando_Tomar = new pagina_cinco_quando_tomar();
+            pagina_Cinco_Quando_Tomar.Closed += (s, args) => this.Close();
             pagina_Cinco_Quando_Tomar.Show();
         }
 
         private void cHECKLISTToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // ESTE MENU ABRE A PÁGINA "CHECK-LIST"
+            this.Hide();
             pagina_seis_check_list pagina_Seis_Check_List = new pagina_seis_check_list();
+            pagina_Seis_Check_List.Closed += (s, args) => this.Close();
             pagina_Seis_Check_List.Show();
         }
 
         private void vOLTARToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // ESTE BOTÃO VOLTA PARA PÁGINA "MENU"
 
         }
 
@@ -81,20 +84,34 @@ namespace projeto_medtime
         private void btn_calcular_Click(object sender, EventArgs e)
         {
             string nome = txtB_nome_do_remedio.Text; //NOME DO REMÉDIO
-            int total = int.Parse(txtB_quantidade_por_dia.Text); //QUANTAS MLS OU UNIDADE POR DIA
-            int vezes = int.Parse(txtB_quantas_vezes_ao_dia.Text); //QUANTAS VEZES POR DIA
-            int quantidade_vez = int.Parse(txtB_quantidade_cada_vez.Text); //QUANTIDADE TOMADA POR VEZ
+            double total = Convert.ToDouble(txtB_quantidade_por_dia.Text); //QUANTAS MLS OU UNIDADE POR DIA
+            double vezes = Convert.ToDouble(txtB_quantas_vezes_ao_dia.Text); //QUANTAS VEZES POR DIA
+            double quantidade_vez = Convert.ToDouble(txtB_quantidade_cada_vez.Text); //QUANTIDADE TOMADA POR VEZ
 
-            int dias = total / (vezes * quantidade_vez);
-            int dose = total % (vezes * quantidade_vez);
+            double dias = total / (vezes * quantidade_vez);
+            double dose = total % (vezes * quantidade_vez);
 
             if (checkBox_Unidade.Checked == true)
             {
-                lbl_resultado.Text = ("O REMÉDIO DURARÁ PARA " + dias + " DIAS E " + dose + " DOSE!");
+                if (dose > 0)
+                {
+                    lbl_resultado.Text = ("O REMÉDIO DURARÁ PARA " + Math.Floor(dias) + " DIAS E " + dose + " DOSE!");
+                }
+                else if (dose == 0)
+                {
+                    lbl_resultado.Text = ("O REMÉDIO DURARÁ PARA " + dias + " DIAS");
+                }
             }
             else if (checkBox2_Miligrama.Checked == true)
             {
-                lbl_resultado.Text = ("O REMÉDIO DURARÁ PARA " + dias + " DIAS E " + dose + " MILIGRAMAS!");
+                if (dose > 0)
+                {
+                    lbl_resultado.Text = ("O REMÉDIO DURARÁ PARA " + Math.Floor(dias) + " DIAS E " + dose + " MG/ML!");
+                }
+                else if (dose == 0)
+                {
+                    lbl_resultado.Text = ("O REMÉDIO DURARÁ PARA " + dias + " DIAS");
+                }
             }
 
             lbl_resultado.Visible = true;
@@ -114,8 +131,8 @@ namespace projeto_medtime
         {
             if (checkBox2_Miligrama.Checked)
             {
-                lbl_quantidade_por_dia.Text = ("QUANTAS MILIGRAMAS POSSUI?");
-                lbl_quantidade_cada_vez.Text = ("QUANTAS MILIGRAMAS VOCÊ TOMA POR VEZ?");
+                lbl_quantidade_por_dia.Text = ("QUANTAS MG/ML POSSUI?");
+                lbl_quantidade_cada_vez.Text = ("QUANTAS MG/ML VOCÊ TOMA POR VEZ?");
             }
         }
 
@@ -126,7 +143,20 @@ namespace projeto_medtime
 
         private void lbl_quantidade_cada_vez_Click(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void linkLabel_quando_tomar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            pagina_cinco_quando_tomar pagina_Cinco_Quando_Tomar = new pagina_cinco_quando_tomar();
+            pagina_Cinco_Quando_Tomar.Closed += (s, args) => this.Close();
+            pagina_Cinco_Quando_Tomar.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

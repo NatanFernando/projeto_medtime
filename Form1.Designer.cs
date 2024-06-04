@@ -244,7 +244,6 @@
         private Button btn_logar_login;
         private Button btn_pular;
         private Label lbl_nome_login;
-        private TextBox txtB_nome_login;
         private Label lbl_cpf_login;
         private Label lbl_senha_login;
         private TextBox txtB_senha_login;
@@ -255,5 +254,6 @@
         private PictureBox pictureBox1;
         private Label lbl_logo_cadastro;
         private PictureBox pictureBox_ajuda_login;
+        private TextBox txtB_nome_login;
     }
 }

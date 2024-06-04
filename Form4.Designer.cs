@@ -45,6 +45,8 @@
             checkBox2_Miligrama = new CheckBox();
             lbl_resultado = new Label();
             btn_calcular = new Button();
+            lbl_ja_tomou_esse_remedio = new Label();
+            linkLabel_quando_tomar = new LinkLabel();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -184,7 +186,7 @@
             checkBox_Unidade.AutoSize = true;
             checkBox_Unidade.Font = new Font("Franklin Gothic Heavy", 15.75F);
             checkBox_Unidade.ForeColor = SystemColors.Window;
-            checkBox_Unidade.Location = new Point(307, 148);
+            checkBox_Unidade.Location = new Point(343, 148);
             checkBox_Unidade.Name = "checkBox_Unidade";
             checkBox_Unidade.Size = new Size(119, 30);
             checkBox_Unidade.TabIndex = 11;
@@ -197,11 +199,11 @@
             checkBox2_Miligrama.AutoSize = true;
             checkBox2_Miligrama.Font = new Font("Franklin Gothic Heavy", 15.75F);
             checkBox2_Miligrama.ForeColor = SystemColors.Window;
-            checkBox2_Miligrama.Location = new Point(478, 148);
+            checkBox2_Miligrama.Location = new Point(492, 148);
             checkBox2_Miligrama.Name = "checkBox2_Miligrama";
-            checkBox2_Miligrama.Size = new Size(146, 30);
+            checkBox2_Miligrama.Size = new Size(113, 30);
             checkBox2_Miligrama.TabIndex = 12;
-            checkBox2_Miligrama.Text = "MILIGRAMA";
+            checkBox2_Miligrama.Text = "MG / ML";
             checkBox2_Miligrama.UseVisualStyleBackColor = true;
             checkBox2_Miligrama.CheckedChanged += checkBox2_Miligrama_CheckedChanged;
             // 
@@ -210,7 +212,7 @@
             lbl_resultado.AutoSize = true;
             lbl_resultado.Font = new Font("Franklin Gothic Heavy", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lbl_resultado.ForeColor = SystemColors.Window;
-            lbl_resultado.Location = new Point(130, 474);
+            lbl_resultado.Location = new Point(130, 484);
             lbl_resultado.Name = "lbl_resultado";
             lbl_resultado.Size = new Size(166, 34);
             lbl_resultado.TabIndex = 13;
@@ -223,13 +225,38 @@
             btn_calcular.BackColor = Color.CornflowerBlue;
             btn_calcular.Font = new Font("Franklin Gothic Heavy", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btn_calcular.ForeColor = SystemColors.Window;
-            btn_calcular.Location = new Point(382, 420);
+            btn_calcular.Location = new Point(392, 435);
             btn_calcular.Name = "btn_calcular";
             btn_calcular.Size = new Size(124, 35);
             btn_calcular.TabIndex = 14;
             btn_calcular.Text = "CALCULAR";
             btn_calcular.UseVisualStyleBackColor = false;
             btn_calcular.Click += btn_calcular_Click;
+            // 
+            // lbl_ja_tomou_esse_remedio
+            // 
+            lbl_ja_tomou_esse_remedio.AutoSize = true;
+            lbl_ja_tomou_esse_remedio.Font = new Font("Franklin Gothic Heavy", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbl_ja_tomou_esse_remedio.ForeColor = SystemColors.Window;
+            lbl_ja_tomou_esse_remedio.Location = new Point(478, 399);
+            lbl_ja_tomou_esse_remedio.Name = "lbl_ja_tomou_esse_remedio";
+            lbl_ja_tomou_esse_remedio.Size = new Size(208, 21);
+            lbl_ja_tomou_esse_remedio.TabIndex = 15;
+            lbl_ja_tomou_esse_remedio.Text = "JÁ TOMOU ESSE REMÉDIO?";
+            // 
+            // linkLabel_quando_tomar
+            // 
+            linkLabel_quando_tomar.ActiveLinkColor = Color.DeepSkyBlue;
+            linkLabel_quando_tomar.AutoSize = true;
+            linkLabel_quando_tomar.Font = new Font("Franklin Gothic Heavy", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            linkLabel_quando_tomar.LinkColor = Color.CornflowerBlue;
+            linkLabel_quando_tomar.Location = new Point(682, 399);
+            linkLabel_quando_tomar.Name = "linkLabel_quando_tomar";
+            linkLabel_quando_tomar.Size = new Size(104, 21);
+            linkLabel_quando_tomar.TabIndex = 16;
+            linkLabel_quando_tomar.TabStop = true;
+            linkLabel_quando_tomar.Text = "CLIQUE AQUI";
+            linkLabel_quando_tomar.LinkClicked += linkLabel_quando_tomar_LinkClicked;
             // 
             // pagina_quatro_quando_comprar
             // 
@@ -238,6 +265,8 @@
             AutoSize = true;
             BackColor = Color.LightSteelBlue;
             ClientSize = new Size(884, 561);
+            Controls.Add(linkLabel_quando_tomar);
+            Controls.Add(lbl_ja_tomou_esse_remedio);
             Controls.Add(btn_calcular);
             Controls.Add(lbl_resultado);
             Controls.Add(checkBox2_Miligrama);
@@ -283,5 +312,7 @@
         private CheckBox checkBox2_Miligrama;
         private Label lbl_resultado;
         private Button btn_calcular;
+        private Label lbl_ja_tomou_esse_remedio;
+        private LinkLabel linkLabel_quando_tomar;
     }
 }

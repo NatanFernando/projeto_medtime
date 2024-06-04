@@ -22,33 +22,44 @@ namespace projeto_medtime
 
         private void lbl_apresentacao_menu_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btn_calculo_de_compra_menu_Click(object sender, EventArgs e)
         {
             // ESTE BOTÃO DIRECIONA PARA A PÁGINA "QUANDO COMPRAR?"
+            this.Hide();
             pagina_quatro_quando_comprar pagina_Quatro_Quando_Comprar = new pagina_quatro_quando_comprar();
+            pagina_Quatro_Quando_Comprar.Closed += (s, args) => this.Close();
             pagina_Quatro_Quando_Comprar.Show();
         }
 
         private void btn_calculo_de_horario_menu_Click(object sender, EventArgs e)
         {
             // ESTE BOTÃO DIRECIONA PARA A PÁGINA "QUANDO TOMAR?"
+            this.Hide();
             pagina_cinco_quando_tomar pagina_Cinco_Quando_Tomar = new pagina_cinco_quando_tomar();
+            pagina_Cinco_Quando_Tomar.Closed += (s, args) => this.Close();
             pagina_Cinco_Quando_Tomar.Show();
         }
 
         private void btn_check_list_menu_Click(object sender, EventArgs e)
         {
             // ESTE BOTÃO DIRECIONA PARA A PÁGINA "CHECK-LIST"
+            this.Hide();
             pagina_seis_check_list pagina_Seis_Check_List = new pagina_seis_check_list();
+            pagina_Seis_Check_List.Closed += (s, args) => this.Close();
             pagina_Seis_Check_List.Show();
         }
 
         private void pagina_tres_menu_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox_ajuda_menu_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("'QUANDO COMPRAR?' - CALCULO DE QUANDO O REMÉDIO IRÁ ACABAR\n'QUANDO TOMAR?' - CALCULO DE HORÁRIO DO REMÉDIO\nGERENCIAMENTO - CONTROLE DO SEUS REMÉDIOS");
         }
     }
 }

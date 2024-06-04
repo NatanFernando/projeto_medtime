@@ -76,7 +76,7 @@
             btn_cadastrarme_cadastro.BackColor = Color.CornflowerBlue;
             btn_cadastrarme_cadastro.Font = new Font("Franklin Gothic Heavy", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btn_cadastrarme_cadastro.ForeColor = SystemColors.Window;
-            btn_cadastrarme_cadastro.Location = new Point(511, 430);
+            btn_cadastrarme_cadastro.Location = new Point(510, 444);
             btn_cadastrarme_cadastro.Name = "btn_cadastrarme_cadastro";
             btn_cadastrarme_cadastro.Size = new Size(301, 50);
             btn_cadastrarme_cadastro.TabIndex = 2;
@@ -100,7 +100,7 @@
             lbl_senha_cadastro.AutoSize = true;
             lbl_senha_cadastro.Font = new Font("Franklin Gothic Heavy", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lbl_senha_cadastro.ForeColor = SystemColors.Window;
-            lbl_senha_cadastro.Location = new Point(493, 262);
+            lbl_senha_cadastro.Location = new Point(493, 271);
             lbl_senha_cadastro.Name = "lbl_senha_cadastro";
             lbl_senha_cadastro.Size = new Size(101, 34);
             lbl_senha_cadastro.TabIndex = 10;
@@ -123,7 +123,7 @@
             lbl_confirmar_senha_cadastro.AutoSize = true;
             lbl_confirmar_senha_cadastro.Font = new Font("Franklin Gothic Heavy", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lbl_confirmar_senha_cadastro.ForeColor = SystemColors.Window;
-            lbl_confirmar_senha_cadastro.Location = new Point(493, 337);
+            lbl_confirmar_senha_cadastro.Location = new Point(493, 356);
             lbl_confirmar_senha_cadastro.Name = "lbl_confirmar_senha_cadastro";
             lbl_confirmar_senha_cadastro.Size = new Size(265, 34);
             lbl_confirmar_senha_cadastro.TabIndex = 12;
@@ -133,7 +133,7 @@
             // 
             txtB_senha_cadastro.Font = new Font("Franklin Gothic Heavy", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtB_senha_cadastro.ForeColor = SystemColors.WindowFrame;
-            txtB_senha_cadastro.Location = new Point(493, 299);
+            txtB_senha_cadastro.Location = new Point(493, 308);
             txtB_senha_cadastro.Name = "txtB_senha_cadastro";
             txtB_senha_cadastro.Size = new Size(334, 35);
             txtB_senha_cadastro.TabIndex = 14;
@@ -143,7 +143,7 @@
             // 
             txtB_confirmar_senha_cadastro.Font = new Font("Franklin Gothic Heavy", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtB_confirmar_senha_cadastro.ForeColor = SystemColors.WindowFrame;
-            txtB_confirmar_senha_cadastro.Location = new Point(493, 374);
+            txtB_confirmar_senha_cadastro.Location = new Point(493, 393);
             txtB_confirmar_senha_cadastro.Name = "txtB_confirmar_senha_cadastro";
             txtB_confirmar_senha_cadastro.Size = new Size(334, 35);
             txtB_confirmar_senha_cadastro.TabIndex = 15;
@@ -255,6 +255,7 @@
             RightToLeft = RightToLeft.No;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "CADASTRO";
+            Load += pagina_dois_cadastro_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox_outros).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_masculino).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_feminino).EndInit();

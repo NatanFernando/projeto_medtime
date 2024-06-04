@@ -34,7 +34,9 @@
             btn_calculo_de_horario_menu = new Button();
             btn_check_list_menu = new Button();
             pictureBox1 = new PictureBox();
+            pictureBox_ajuda_menu = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_ajuda_menu).BeginInit();
             SuspendLayout();
             // 
             // lbl_apresentacao_menu
@@ -57,7 +59,7 @@
             btn_calculo_de_compra_menu.BackColor = Color.CornflowerBlue;
             btn_calculo_de_compra_menu.Font = new Font("Franklin Gothic Heavy", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btn_calculo_de_compra_menu.ForeColor = SystemColors.Window;
-            btn_calculo_de_compra_menu.Location = new Point(292, 306);
+            btn_calculo_de_compra_menu.Location = new Point(292, 230);
             btn_calculo_de_compra_menu.Name = "btn_calculo_de_compra_menu";
             btn_calculo_de_compra_menu.Size = new Size(301, 50);
             btn_calculo_de_compra_menu.TabIndex = 3;
@@ -71,7 +73,7 @@
             btn_calculo_de_horario_menu.BackColor = Color.CornflowerBlue;
             btn_calculo_de_horario_menu.Font = new Font("Franklin Gothic Heavy", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btn_calculo_de_horario_menu.ForeColor = SystemColors.Window;
-            btn_calculo_de_horario_menu.Location = new Point(292, 240);
+            btn_calculo_de_horario_menu.Location = new Point(292, 298);
             btn_calculo_de_horario_menu.Name = "btn_calculo_de_horario_menu";
             btn_calculo_de_horario_menu.Size = new Size(301, 50);
             btn_calculo_de_horario_menu.TabIndex = 4;
@@ -85,7 +87,7 @@
             btn_check_list_menu.BackColor = Color.CornflowerBlue;
             btn_check_list_menu.Font = new Font("Franklin Gothic Heavy", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btn_check_list_menu.ForeColor = SystemColors.Window;
-            btn_check_list_menu.Location = new Point(292, 372);
+            btn_check_list_menu.Location = new Point(292, 367);
             btn_check_list_menu.Name = "btn_check_list_menu";
             btn_check_list_menu.Size = new Size(301, 50);
             btn_check_list_menu.TabIndex = 5;
@@ -103,12 +105,24 @@
             pictureBox1.TabIndex = 11;
             pictureBox1.TabStop = false;
             // 
+            // pictureBox_ajuda_menu
+            // 
+            pictureBox_ajuda_menu.Image = (Image)resources.GetObject("pictureBox_ajuda_menu.Image");
+            pictureBox_ajuda_menu.Location = new Point(847, 524);
+            pictureBox_ajuda_menu.Name = "pictureBox_ajuda_menu";
+            pictureBox_ajuda_menu.Size = new Size(25, 25);
+            pictureBox_ajuda_menu.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox_ajuda_menu.TabIndex = 16;
+            pictureBox_ajuda_menu.TabStop = false;
+            pictureBox_ajuda_menu.Click += pictureBox_ajuda_menu_Click;
+            // 
             // pagina_tres_menu
             // 
             AutoScaleMode = AutoScaleMode.None;
             AutoSize = true;
             BackColor = Color.LightSteelBlue;
             ClientSize = new Size(884, 561);
+            Controls.Add(pictureBox_ajuda_menu);
             Controls.Add(pictureBox1);
             Controls.Add(btn_check_list_menu);
             Controls.Add(btn_calculo_de_horario_menu);
@@ -120,6 +134,7 @@
             Text = "MENU";
             Load += pagina_tres_menu_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_ajuda_menu).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -131,5 +146,6 @@
         private Button btn_calculo_de_horario_menu;
         private Button btn_check_list_menu;
         private PictureBox pictureBox1;
+        private PictureBox pictureBox_ajuda_menu;
     }
 }
