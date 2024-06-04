@@ -57,7 +57,7 @@
             menuStrip1.Location = new Point(222, 9);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.RenderMode = ToolStripRenderMode.System;
-            menuStrip1.Size = new Size(444, 29);
+            menuStrip1.Size = new Size(485, 29);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -81,8 +81,8 @@
             // 
             cHECKLISTToolStripMenuItem.ForeColor = SystemColors.Window;
             cHECKLISTToolStripMenuItem.Name = "cHECKLISTToolStripMenuItem";
-            cHECKLISTToolStripMenuItem.Size = new Size(109, 25);
-            cHECKLISTToolStripMenuItem.Text = "CHECK-LIST";
+            cHECKLISTToolStripMenuItem.Size = new Size(150, 25);
+            cHECKLISTToolStripMenuItem.Text = "GERENCIAMENTO";
             cHECKLISTToolStripMenuItem.Click += cHECKLISTToolStripMenuItem_Click;
             // 
             // txtB_nome_do_remedio
@@ -177,6 +177,7 @@
             lbl_quantidade_cada_vez.Size = new Size(413, 26);
             lbl_quantidade_cada_vez.TabIndex = 10;
             lbl_quantidade_cada_vez.Text = "QUAL A QUANTIDADE TOMADA CADA VEZ?";
+            lbl_quantidade_cada_vez.Click += lbl_quantidade_cada_vez_Click;
             // 
             // checkBox_Unidade
             // 
@@ -207,11 +208,11 @@
             // lbl_resultado
             // 
             lbl_resultado.AutoSize = true;
-            lbl_resultado.Font = new Font("Franklin Gothic Heavy", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbl_resultado.Font = new Font("Franklin Gothic Heavy", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lbl_resultado.ForeColor = SystemColors.Window;
-            lbl_resultado.Location = new Point(382, 480);
+            lbl_resultado.Location = new Point(130, 474);
             lbl_resultado.Name = "lbl_resultado";
-            lbl_resultado.Size = new Size(128, 26);
+            lbl_resultado.Size = new Size(166, 34);
             lbl_resultado.TabIndex = 13;
             lbl_resultado.Text = "RESULTADO";
             lbl_resultado.TextAlign = ContentAlignment.MiddleCenter;

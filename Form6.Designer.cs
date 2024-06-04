@@ -44,7 +44,7 @@
             menuStrip1.Location = new Point(222, 9);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.RenderMode = ToolStripRenderMode.System;
-            menuStrip1.Size = new Size(564, 29);
+            menuStrip1.Size = new Size(485, 29);
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -68,8 +68,8 @@
             // 
             cHECKLISTToolStripMenuItem.ForeColor = SystemColors.Window;
             cHECKLISTToolStripMenuItem.Name = "cHECKLISTToolStripMenuItem";
-            cHECKLISTToolStripMenuItem.Size = new Size(109, 25);
-            cHECKLISTToolStripMenuItem.Text = "CHECK-LIST";
+            cHECKLISTToolStripMenuItem.Size = new Size(150, 25);
+            cHECKLISTToolStripMenuItem.Text = "GERENCIAMENTO";
             // 
             // pagina_seis_check_list
             // 
@@ -79,6 +79,7 @@
             ClientSize = new Size(884, 561);
             Controls.Add(menuStrip1);
             Name = "pagina_seis_check_list";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "CHECK-LIST";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();

@@ -57,7 +57,7 @@
             btn_calculo_de_compra_menu.BackColor = Color.CornflowerBlue;
             btn_calculo_de_compra_menu.Font = new Font("Franklin Gothic Heavy", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btn_calculo_de_compra_menu.ForeColor = SystemColors.Window;
-            btn_calculo_de_compra_menu.Location = new Point(292, 236);
+            btn_calculo_de_compra_menu.Location = new Point(292, 306);
             btn_calculo_de_compra_menu.Name = "btn_calculo_de_compra_menu";
             btn_calculo_de_compra_menu.Size = new Size(301, 50);
             btn_calculo_de_compra_menu.TabIndex = 3;
@@ -71,7 +71,7 @@
             btn_calculo_de_horario_menu.BackColor = Color.CornflowerBlue;
             btn_calculo_de_horario_menu.Font = new Font("Franklin Gothic Heavy", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btn_calculo_de_horario_menu.ForeColor = SystemColors.Window;
-            btn_calculo_de_horario_menu.Location = new Point(292, 302);
+            btn_calculo_de_horario_menu.Location = new Point(292, 240);
             btn_calculo_de_horario_menu.Name = "btn_calculo_de_horario_menu";
             btn_calculo_de_horario_menu.Size = new Size(301, 50);
             btn_calculo_de_horario_menu.TabIndex = 4;
@@ -85,11 +85,11 @@
             btn_check_list_menu.BackColor = Color.CornflowerBlue;
             btn_check_list_menu.Font = new Font("Franklin Gothic Heavy", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btn_check_list_menu.ForeColor = SystemColors.Window;
-            btn_check_list_menu.Location = new Point(292, 367);
+            btn_check_list_menu.Location = new Point(292, 372);
             btn_check_list_menu.Name = "btn_check_list_menu";
             btn_check_list_menu.Size = new Size(301, 50);
             btn_check_list_menu.TabIndex = 5;
-            btn_check_list_menu.Text = "CHECK-LIST";
+            btn_check_list_menu.Text = "GERENCIAMENTO";
             btn_check_list_menu.UseVisualStyleBackColor = false;
             btn_check_list_menu.Click += btn_check_list_menu_Click;
             // 

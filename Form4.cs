@@ -65,7 +65,7 @@ namespace projeto_medtime
 
         private void label2_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void txtB_nome_do_remedio_TextChanged(object sender, EventArgs e)
@@ -80,45 +80,53 @@ namespace projeto_medtime
 
         private void btn_calcular_Click(object sender, EventArgs e)
         {
-            string nome = txtB_nome_do_remedio.Text;
+            string nome = txtB_nome_do_remedio.Text; //NOME DO REMÉDIO
             int total = int.Parse(txtB_quantidade_por_dia.Text); //QUANTAS MLS OU UNIDADE POR DIA
             int vezes = int.Parse(txtB_quantas_vezes_ao_dia.Text); //QUANTAS VEZES POR DIA
-            int quanidade_vez = int.Parse(txtB_quantidade_cada_vez.Text); //QUANTIDADE TOMADA POR VEZ
+            int quantidade_vez = int.Parse(txtB_quantidade_cada_vez.Text); //QUANTIDADE TOMADA POR VEZ
 
-            int dias = total / (vezes * quanidade_vez);
+            int dias = total / (vezes * quantidade_vez);
+            int dose = total % (vezes * quantidade_vez);
 
-            lbl_resultado.Visible = true;   
-
-            if ((60 % dias) == 0)
+            if (checkBox_Unidade.Checked == true)
             {
-                lbl_resultado.Text = ("O REMÉDIO ACABARÁ EM " + dias + " DIAS");
+                lbl_resultado.Text = ("O REMÉDIO DURARÁ PARA " + dias + " DIAS E " + dose + " DOSE!");
             }
-            else
+            else if (checkBox2_Miligrama.Checked == true)
             {
-                int dias_completos = (60 / dias);
-                lbl_resultado.Text = ("Total de dias" + dias_completos);
+                lbl_resultado.Text = ("O REMÉDIO DURARÁ PARA " + dias + " DIAS E " + dose + " MILIGRAMAS!");
             }
+
+            lbl_resultado.Visible = true;
+
         }
 
         private void checkBox_Unidade_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox_Unidade.Checked)
             {
-                lbl_quantidade_por_dia.Text = ("QUANTAS UNIDADES POSSUI?");
+                lbl_quantidade_por_dia.Text = ("QUANTOS COMPRIMIDOS POSSUI?");
+                lbl_quantidade_cada_vez.Text = ("QUANTOS COMPRIMIDOS VOCÊ INGERI POR VEZ?");
             }
         }
 
         private void checkBox2_Miligrama_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox2_Miligrama.Checked)          
+            if (checkBox2_Miligrama.Checked)
             {
                 lbl_quantidade_por_dia.Text = ("QUANTAS MILIGRAMAS POSSUI?");
+                lbl_quantidade_cada_vez.Text = ("QUANTAS MILIGRAMAS VOCÊ TOMA POR VEZ?");
             }
         }
 
         private void lbl_quantidade_por_dia_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void lbl_quantidade_cada_vez_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
