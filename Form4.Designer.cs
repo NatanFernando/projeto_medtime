@@ -212,7 +212,7 @@
             lbl_resultado.AutoSize = true;
             lbl_resultado.Font = new Font("Franklin Gothic Heavy", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lbl_resultado.ForeColor = SystemColors.Window;
-            lbl_resultado.Location = new Point(130, 484);
+            lbl_resultado.Location = new Point(150, 484);
             lbl_resultado.Name = "lbl_resultado";
             lbl_resultado.Size = new Size(166, 34);
             lbl_resultado.TabIndex = 13;
