@@ -53,7 +53,7 @@
             btn_logar_login.BackgroundImageLayout = ImageLayout.None;
             btn_logar_login.Font = new Font("Franklin Gothic Heavy", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btn_logar_login.ForeColor = SystemColors.Window;
-            btn_logar_login.Location = new Point(469, 410);
+            btn_logar_login.Location = new Point(491, 410);
             btn_logar_login.Name = "btn_logar_login";
             btn_logar_login.Size = new Size(104, 45);
             btn_logar_login.TabIndex = 0;
@@ -66,7 +66,7 @@
             btn_pular.BackColor = Color.CornflowerBlue;
             btn_pular.Font = new Font("Franklin Gothic Heavy", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btn_pular.ForeColor = SystemColors.Window;
-            btn_pular.Location = new Point(614, 410);
+            btn_pular.Location = new Point(629, 410);
             btn_pular.Name = "btn_pular";
             btn_pular.Size = new Size(99, 45);
             btn_pular.TabIndex = 1;
@@ -111,7 +111,7 @@
             lbl_senha_login.AutoSize = true;
             lbl_senha_login.Font = new Font("Franklin Gothic Heavy", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lbl_senha_login.ForeColor = SystemColors.Window;
-            lbl_senha_login.Location = new Point(386, 274);
+            lbl_senha_login.Location = new Point(386, 283);
             lbl_senha_login.Name = "lbl_senha_login";
             lbl_senha_login.Size = new Size(101, 34);
             lbl_senha_login.TabIndex = 6;

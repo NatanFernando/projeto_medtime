@@ -22,13 +22,17 @@ namespace projeto_medtime
 
         private void qUANDOCOMPRARToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.Hide();
             pagina_quatro_quando_comprar pagina_Quatro_Quando_Comprar = new pagina_quatro_quando_comprar();
+            pagina_Quatro_Quando_Comprar.Closed += (s, args) => this.Close();
             pagina_Quatro_Quando_Comprar.Show();
         }
 
         private void cHECKLISTToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.Hide();
             pagina_seis_check_list pagina_Seis_Check_List = new pagina_seis_check_list();
+            pagina_Seis_Check_List.Closed += (s, args) => this.Close();
             pagina_Seis_Check_List.Show();
         }
 
@@ -71,8 +75,8 @@ namespace projeto_medtime
 
         private void checkBox_Unidade_ja_tomou_CheckedChanged(object sender, EventArgs e)
         {
-            label_intervalo_remedio.Text = ("DE QUANTO EM QUANTO TEMPO VOCÊ INGERI O REMÉDIO?");
-            label_ultima_vez.Text = ("QUANDO FOI A ÚLTIMA VEZ QUE VOCÊ INGERIU O REMÉDIO?");
+            label_intervalo_remedio.Text = ("DE QUANTAS EM QUANTAS HORAS VOCÊ INGERI O REMÉDIO? ");
+            label_ultima_vez.Text = ("QUANDO FOI A ÚLTIMA VEZ QUE INGERIU O REMÉDIO?");
         }
 
         private void label_intervalo_remedio_Click(object sender, EventArgs e)
@@ -82,8 +86,8 @@ namespace projeto_medtime
 
         private void checkBox2_Miligrama_ja_tomou_CheckedChanged(object sender, EventArgs e)
         {
-            label_intervalo_remedio.Text = ("DE QUANTO EM QUANTO TEMPO VOCÊ TOMA O REMÉDIO?");
-            label_ultima_vez.Text = ("QUANDO FOI A ÚLTIMA VEZ QUE VOCÊ TOMOU O REMÉDIO?");
+            label_intervalo_remedio.Text = ("DE QUANTAS EM QUANTAS HORAS VOCÊ TOMA O REMÉDIO?");
+            label_ultima_vez.Text = ("QUANDO FOI A ÚLTIMA VEZ QUE TOMOU O REMÉDIO?");
         }
 
         private void listbox_horarios_SelectedIndexChanged(object sender, EventArgs e)
@@ -94,6 +98,16 @@ namespace projeto_medtime
         private void pagina_cinco_quando_tomar_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void label_ultima_vez_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox_ajuda_menu_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("NÃO SE ESQUEÇA DE INCLUIR OS MINUTOS!");
         }
     }
 }
